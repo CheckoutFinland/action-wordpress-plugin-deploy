@@ -1,3 +1,5 @@
+Forked from [10up/action-wordpress-plugin-deploy](https://github.com/10up/action-wordpress-plugin-deploy)
+
 # WordPress.org Plugin Deploy
 
 This Action commits the contents of your Git tag to the WordPress.org plugin repository using the same tag name. It can exclude files as defined in either `.distignore` or `.gitattributes`, and moves anything from a `.wordpress-org` subdirectory to the top-level `assets` directory in Subversion (plugin banners, icons, and screenshots).

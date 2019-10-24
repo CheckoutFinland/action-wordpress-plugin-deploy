@@ -5,16 +5,16 @@ LABEL "com.github.actions.description"="Deploy to the WordPress Plugin Repositor
 LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="blue"
 
-LABEL maintainer="Helen Hou-Sandí <helen.y.hou@gmail.com>"
+LABEL maintainer="Joonas Loueranta <joonas.loueranta@op.fi>"
 LABEL version="1.2.1"
-LABEL repository="http://github.com/helen/action-wordpress-plugin-deploy"
+LABEL repository="https://github.com/OPMerchantServices/action-wordpress-plugin-deploy"
 
 RUN apt-get update \
 	&& apt-get install -y subversion rsync git \
 	&& apt-get clean -y \
 	&& rm -rf /var/lib/apt/lists/* \
-	&& git config --global user.email "10upbot+github@10up.com" \
-	&& git config --global user.name "10upbot on GitHub"
+	&& git config --global user.email "joonas.loueranta@op.fi" \
+	&& git config --global user.name "Joonas Loueranta"
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
